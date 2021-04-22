@@ -41,11 +41,46 @@ Cuando un conjunto de usuarios consulta un enésimo número (superior a 1000000)
 
 **Preguntas**
 
-* ¿Qué es un Azure Function?
-* ¿Qué es serverless?
-* ¿Qué es el runtime y que implica seleccionarlo al momento de crear el Function App?
+* ¿Qué es un Azure Function?  
+
+	Azure Function es una solución para ejecutar fácilmente pequeños fragmentos de código o “funciones” en la nube. Toma los conceptos básicos de los ya conocidos WebJobs y los amplía de forma interesante.  
+	Azure Function nos presenta una multitud de nuevos triggers para poder ejecutarlo. Entre todos estos triggers podemos encontrar: Cosmos DB, Event Hub y WebHooks.
+
+* ¿Qué es serverless?  
+
+	Es un modelo de ejecución en el que el proveedor en la nube (AWS, Azure o Google Cloud) es responsable de ejecutar un fragmento de código mediante la asignación dinámica de los recursos. Y cobrando solo por la cantidad de recursos utilizados para ejecutar el código. El código, generalmente, se ejecuta dentro de contenedores sin estado que pueden ser activados por una variedad de eventos que incluyen solicitudes HTTP, eventos de base de datos, servicios de colas, alertas de monitoreo, carga de archivos, eventos programados (trabajos cron), etc. 
+	
+* ¿Qué es el runtime y que implica seleccionarlo al momento de crear el Function App?    
+	Un runtime carga todas las aplicaciones de un programa y las ejecuta en una plataforma. Esta plataforma pone a disposición todos los recursos necesarios para ejecutar el programa independientemente del sistema operativo.
+	
 * ¿Por qué es necesario crear un Storage Account de la mano de un Function App?
-* ¿Cuáles son los tipos de planes para un Function App?, ¿En qué se diferencias?, mencione ventajas y desventajas de cada uno de ellos.
+* ¿Cuáles son los tipos de planes para un Function App?, ¿En qué se diferencias?, mencione ventajas y desventajas de cada uno de ellos.  
+	**Plan de consumo** 
+	Escale de forma automática y pague los recursos de proceso solo cuando se ejecuten las funciones.  
+	En el plan de consumo, las instancias del host de Functions se agregan y quitan de forma dinámica según el número de eventos de entrada.  
+	* Plan de hospedaje predeterminado.  
+	* Pague solo cuando se ejecutan las funciones.  
+	* Escala de forma automática, incluso durante períodos de carga elevada. 
+	
+	**Plan Premium**   
+	Escala automáticamente en función de la demanda mediante trabajos preparados previamente que ejecutan aplicaciones sin ningún retraso después de estar inactivas, ejecuta en instancias más eficaces y se conecta a redes virtuales.  
+	Considere la posibilidad de elegir el plan Premium de Azure Functions en las siguientes situaciones:  
+	* La aplicación de funciones se ejecuta de forma continua, o casi continua.  
+	* Tiene un gran número de ejecuciones pequeñas y una factura de ejecución elevada, pero pocos GB por segundo en el plan de consumo.   
+	* Necesita más opciones de CPU o memoria de las que proporciona el plan de consumo.  
+	* Su código debe ejecutarse durante más tiempo del máximo permitido en el plan de consumo.  
+	* Necesita características que no están disponibles en el plan de consumo, como la conectividad con red virtual.
+	
+	**Plan dedicado**  
+	Ejecute las funciones en un plan de App Service a los Precios de App Service normales.
+	Mejor para escenarios de ejecución prolongada en los que no se puede usar Durable Functions. Considere el plan de App Service en las situaciones siguientes:  
+    * Tiene máquinas virtuales infrautilizadas que ya ejecutan otras instancias de App Service.  
+	* Quiere proporcionar una imagen personalizada en la que ejecutar sus funciones.  
+	* Se requieren escalado y costos predictivos.  
+	
+	
 * ¿Por qué la memoization falla o no funciona de forma correcta?
-* ¿Cómo funciona el sistema de facturación de las Function App?
+* ¿Cómo funciona el sistema de facturación de las Function App?  
+
+	Functions se factura según el consumo de recursos observado, medido en gigabytes por segundos (GB-s). El consumo de recursos observado se calcula multiplicando el tamaño medio de memoria en GB por el tiempo en milisegundos que dura la ejecución de la función. La memoria que una función utiliza se mide redondeando al alza a los 128 MB más cercanos hasta un tamaño de memoria máximo de 1.536 MB, y el tiempo de ejecución se redondea al alza a los 1 ms más cercanos. Para la ejecución de una única función, el tiempo de ejecución mínimo es de 100 ms y la memoria mínima es de 128 MB, respectivamente. Los precios de Functions incluyen una concesión gratuita al mes de 400.000 GB-segundos.
 * Informe
