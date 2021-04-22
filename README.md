@@ -42,7 +42,13 @@ Cuando un conjunto de usuarios consulta un enésimo número (superior a 1000000)
 **Preguntas**
 
 * ¿Qué es un Azure Function?
+	Azure Function es una solución para ejecutar fácilmente pequeños fragmentos de código o “funciones” en la nube. Toma los conceptos básicos de los ya conocidos WebJobs y los amplía de forma interesante.
+
+	Azure Function nos presenta una multitud de nuevos triggers para poder ejecutarlo. Entre todos estos triggers podemos encontrar: Cosmos DB, Event Hub y WebHooks.
+
 * ¿Qué es serverless?
+	es un modelo de ejecución en el que el proveedor en la nube (AWS, Azure o Google Cloud) es responsable de ejecutar un fragmento de código mediante la asignación dinámica de los recursos. Y cobrando solo por la cantidad de recursos utilizados para ejecutar el código. El código, generalmente, se ejecuta dentro de contenedores sin estado que pueden ser activados por una variedad de eventos que incluyen solicitudes HTTP, eventos de base de datos, servicios de colas, alertas de monitoreo, carga de archivos, eventos programados (trabajos cron), etc. 
+	
 * ¿Qué es el runtime y que implica seleccionarlo al momento de crear el Function App?
 * ¿Por qué es necesario crear un Storage Account de la mano de un Function App?
 * ¿Cuáles son los tipos de planes para un Function App?, ¿En qué se diferencias?, mencione ventajas y desventajas de cada uno de ellos.
