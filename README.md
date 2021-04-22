@@ -55,6 +55,7 @@ Cuando un conjunto de usuarios consulta un enésimo número (superior a 1000000)
 	
 * ¿Por qué es necesario crear un Storage Account de la mano de un Function App?
 * ¿Cuáles son los tipos de planes para un Function App?, ¿En qué se diferencias?, mencione ventajas y desventajas de cada uno de ellos.  
+	
 	**Plan de consumo** 
 	Escale de forma automática y pague los recursos de proceso solo cuando se ejecuten las funciones.  
 	En el plan de consumo, las instancias del host de Functions se agregan y quitan de forma dinámica según el número de eventos de entrada.  
