@@ -53,7 +53,9 @@ Cuando un conjunto de usuarios consulta un enésimo número (superior a 1000000)
 * ¿Qué es el runtime y que implica seleccionarlo al momento de crear el Function App?    
 	Un runtime carga todas las aplicaciones de un programa y las ejecuta en una plataforma. Esta plataforma pone a disposición todos los recursos necesarios para ejecutar el programa independientemente del sistema operativo.
 	
-* ¿Por qué es necesario crear un Storage Account de la mano de un Function App?
+* ¿Por qué es necesario crear un Storage Account de la mano de un Function App?  
+	Es necesario para las operaciones de almacenamiento y administracion que realizan las Function App.
+
 * ¿Cuáles son los tipos de planes para un Function App?, ¿En qué se diferencias?, mencione ventajas y desventajas de cada uno de ellos.  
 	**Plan de consumo** 
 	Escale de forma automática y pague los recursos de proceso solo cuando se ejecuten las funciones.  
@@ -79,7 +81,9 @@ Cuando un conjunto de usuarios consulta un enésimo número (superior a 1000000)
 	* Se requieren escalado y costos predictivos.  
 	
 	
-* ¿Por qué la memoization falla o no funciona de forma correcta?
+* ¿Por qué la memoization falla o no funciona de forma correcta?  
+	No funciona de la manera correcta porque los numeros que se generan son muy grandes, esto hace que la memoria se consuma dado esto la memorizacion no funciona.  
+	
 * ¿Cómo funciona el sistema de facturación de las Function App?  
 
 	Functions se factura según el consumo de recursos observado, medido en gigabytes por segundos (GB-s). El consumo de recursos observado se calcula multiplicando el tamaño medio de memoria en GB por el tiempo en milisegundos que dura la ejecución de la función. La memoria que una función utiliza se mide redondeando al alza a los 128 MB más cercanos hasta un tamaño de memoria máximo de 1.536 MB, y el tiempo de ejecución se redondea al alza a los 1 ms más cercanos. Para la ejecución de una única función, el tiempo de ejecución mínimo es de 100 ms y la memoria mínima es de 128 MB, respectivamente. Los precios de Functions incluyen una concesión gratuita al mes de 400.000 GB-segundos.
