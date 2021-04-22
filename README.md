@@ -35,6 +35,46 @@ Cuando un conjunto de usuarios consulta un enésimo número (superior a 1000000)
 
 ![](images/part3/part3-test-function.png)
 
+## Creación de la aplicación de funciones
+
+Primero nos dirigimos al portal de [Portal de Azure](https://portal.azure.com/) y creamos la aplicación de funciones de la siguiente forma.
+
+![img](https://github.com/Skullzo/ARSW-Lab9/blob/main/images/readme/FunctionApp1.PNG)
+
+Luego en la pestaña **Hospedaje** establecemos los siguientes valores, que son los mismos del repositorio, quedando de la siguiente forma.
+
+![img](https://github.com/Skullzo/ARSW-Lab9/blob/main/images/readme/FunctionApp2.PNG)
+
+Después, en la pestaña **Supervisión**, habilitamos los insights de la aplicación y en los insights de la aplicación seleccionamos la que creamos al principio, que es **FunctionProjectFibonacciARSW**.
+
+![img](https://github.com/Skullzo/ARSW-Lab9/blob/main/images/readme/FunctionApp3.PNG)
+
+Ahora, en la pestaña **Etiquetas**, la dejamos tal cual y como se encuentra configurada por defecto, quedando de la siguiente forma.
+
+![img](https://github.com/Skullzo/ARSW-Lab9/blob/main/images/readme/FunctionApp4.PNG)
+
+Por último, para crear la aplicación de funciones, revisamos que todo haya quedado configurado correctamente en la pestaña **Revisar y crear**, para posteriormente darle clic sobre el botón **Crear** en la parte inferior de la pantalla.
+
+![img](https://github.com/Skullzo/ARSW-Lab9/blob/main/images/readme/FunctionApp5.PNG)
+
+Luego de crear la aplicación de funciones, se despliega la siguiente pantalla indicando que se ha completado la implementación de la función correspondiente.
+
+![img](https://github.com/Skullzo/ARSW-Lab9/blob/main/images/readme/FunctionApp6.PNG)
+
+## Despliegue de la aplicación de funciones desde Visual Studio Code
+
+Después de crear satisfactoriamente la aplicación de funciones desde Microsoft Azure, abrimos el proyecto en **Visual Studio Code**. Luego, instalamos la extensión **Azure Functions** de la siguiente forma.
+
+![img](https://github.com/Skullzo/ARSW-Lab9/blob/main/images/readme/Azure1.png)
+
+Luego, presionamos clic derecho sobre la función **FunctionProject** para posteriormente realizar clic izquierdo en **Deploy to Function App...**.
+
+![img](https://github.com/Skullzo/ARSW-Lab9/blob/main/images/readme/FunctionApp7.png)
+
+Por último, seleccionamos la función creada en **Microsoft Azure**, que es **FunctionProjectFibonacciARSW**.
+
+![img](https://github.com/Skullzo/ARSW-Lab9/blob/main/images/readme/FunctionApp8.PNG)
+
 5. Modifique la coleción de POSTMAN con NEWMAN de tal forma que pueda enviar 10 peticiones concurrentes. Verifique los resultados y presente un informe.
 
 6. Cree una nueva Function que resuleva el problema de Fibonacci pero esta vez utilice un enfoque recursivo con memoization. Pruebe la función varias veces, después no haga nada por al menos 5 minutos. Pruebe la función de nuevo con los valores anteriores. ¿Cuál es el comportamiento?.
@@ -57,6 +97,7 @@ Cuando un conjunto de usuarios consulta un enésimo número (superior a 1000000)
 	Es necesario para las operaciones de almacenamiento y administracion que realizan las Function App.
 
 * ¿Cuáles son los tipos de planes para un Function App?, ¿En qué se diferencias?, mencione ventajas y desventajas de cada uno de ellos.  
+	
 	**Plan de consumo** 
 	Escale de forma automática y pague los recursos de proceso solo cuando se ejecuten las funciones.  
 	En el plan de consumo, las instancias del host de Functions se agregan y quitan de forma dinámica según el número de eventos de entrada.  
@@ -88,3 +129,12 @@ Cuando un conjunto de usuarios consulta un enésimo número (superior a 1000000)
 
 	Functions se factura según el consumo de recursos observado, medido en gigabytes por segundos (GB-s). El consumo de recursos observado se calcula multiplicando el tamaño medio de memoria en GB por el tiempo en milisegundos que dura la ejecución de la función. La memoria que una función utiliza se mide redondeando al alza a los 128 MB más cercanos hasta un tamaño de memoria máximo de 1.536 MB, y el tiempo de ejecución se redondea al alza a los 1 ms más cercanos. Para la ejecución de una única función, el tiempo de ejecución mínimo es de 100 ms y la memoria mínima es de 128 MB, respectivamente. Los precios de Functions incluyen una concesión gratuita al mes de 400.000 GB-segundos.
 * Informe
+
+## Autores
+[Alejandro Toro Daza](https://github.com/Skullzo)
+
+[David Fernando Rivera Vargas](https://github.com/DavidRiveraRvD)
+## Licencia & Derechos de Autor
+**©** Alejandro Toro Daza, David Fernando Rivera Vargas. Estudiantes de Ingeniería de Sistemas de la [Escuela Colombiana de Ingeniería Julio Garavito](https://www.escuelaing.edu.co/es/).
+
+Licencia bajo la [GNU General Public License](https://github.com/Skullzo/ARSW-Lab9/blob/main/LICENSE).
