@@ -103,7 +103,7 @@ Como puede ser observado en las imágenes de prueba de lo realizado, todas las p
 
 	![img](https://github.com/Skullzo/ARSW-Lab9/blob/main/images/readme/6.4.1.png)
 
-	![img](https://github.com/Skullzo/ARSW-Lab9/blob/main/images/readme/6.5.png)
+	![img](https://github.com/Skullzo/ARSW-Lab9/blob/main/images/readme/6.5.1.png)
 
 	Como se puede observar en la primera prueba, todas las peticiones fueron exitosas, mientras que en la segunda prueba todas las peticiones fallaron debido a los límites de la recursión. Además, con este nuevo enfoque los tiempos de respuesta se redujeron bastante.
 
