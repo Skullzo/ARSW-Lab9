@@ -35,6 +35,46 @@ Cuando un conjunto de usuarios consulta un enésimo número (superior a 1000000)
 
 ![](images/part3/part3-test-function.png)
 
+## Creación de la aplicación de funciones
+
+Primero nos dirigimos al portal de [Portal de Azure](https://portal.azure.com/) y creamos la aplicación de funciones de la siguiente forma.
+
+![img](https://github.com/Skullzo/ARSW-Lab9/blob/main/images/readme/FunctionApp1.PNG)
+
+Luego en la pestaña **Hospedaje** establecemos los siguientes valores, que son los mismos del repositorio, quedando de la siguiente forma.
+
+![img](https://github.com/Skullzo/ARSW-Lab9/blob/main/images/readme/FunctionApp2.PNG)
+
+Después, en la pestaña **Supervisión**, habilitamos los insights de la aplicación y en los insights de la aplicación seleccionamos la que creamos al principio, que es **FunctionProjectFibonacciARSW**.
+
+![img](https://github.com/Skullzo/ARSW-Lab9/blob/main/images/readme/FunctionApp3.PNG)
+
+Ahora, en la pestaña **Etiquetas**, la dejamos tal cual y como se encuentra configurada por defecto, quedando de la siguiente forma.
+
+![img](https://github.com/Skullzo/ARSW-Lab9/blob/main/images/readme/FunctionApp4.png)
+
+Por último, para crear la aplicación de funciones, revisamos que todo haya quedado configurado correctamente en la pestaña **Revisar y crear**, para posteriormente darle clic sobre el botón **Crear** en la parte inferior de la pantalla.
+
+![img](https://github.com/Skullzo/ARSW-Lab9/blob/main/images/readme/FunctionApp5.png)
+
+Luego de crear la aplicación de funciones, se despliega la siguiente pantalla indicando que se ha completado la implementación de la función correspondiente.
+
+![img](https://github.com/Skullzo/ARSW-Lab9/blob/main/images/readme/FunctionApp6.PNG)
+
+## Despliegue de la aplicación de funciones desde Visual Studio Code
+
+Después de crear satisfactoriamente la aplicación de funciones desde Microsoft Azure, abrimos el proyecto en **Visual Studio Code**. Luego, instalamos la extensión **Azure Functions** de la siguiente forma.
+
+![img](https://github.com/Skullzo/ARSW-Lab9/blob/main/images/readme/Azure1.png)
+
+Luego, presionamos clic derecho sobre la función **FunctionProject** para posteriormente realizar clic izquierdo en **Deploy to Function App...**.
+
+![img](https://github.com/Skullzo/ARSW-Lab9/blob/main/images/readme/FunctionApp7.PNG)
+
+Por último, seleccionamos la función creada en **Microsoft Azure**, que es **FunctionProjectFibonacciARSW**.
+
+![img](https://github.com/Skullzo/ARSW-Lab9/blob/main/images/readme/FunctionApp8.PNG)
+
 5. Modifique la coleción de POSTMAN con NEWMAN de tal forma que pueda enviar 10 peticiones concurrentes. Verifique los resultados y presente un informe.
 
 6. Cree una nueva Function que resuleva el problema de Fibonacci pero esta vez utilice un enfoque recursivo con memoization. Pruebe la función varias veces, después no haga nada por al menos 5 minutos. Pruebe la función de nuevo con los valores anteriores. ¿Cuál es el comportamiento?.
