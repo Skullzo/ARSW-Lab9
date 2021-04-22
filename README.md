@@ -97,7 +97,7 @@ Como puede ser observado en las imágenes de prueba de lo realizado, todas las p
 
 	![img](https://github.com/Skullzo/ARSW-Lab9/blob/main/images/readme/6.2.PNG)
 
-	![img](https://github.com/Skullzo/ARSW-Lab9/blob/main/images/readme/6.3.png)
+	![img](https://github.com/Skullzo/ARSW-Lab9/blob/main/images/readme/6.3.1.png)
 
 	**Segunda Prueba**
 
