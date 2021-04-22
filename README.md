@@ -101,6 +101,7 @@ Como puede ser observado en las imágenes de prueba de lo realizado, todas las p
 
 	**Segunda Prueba**
 
+	![img](https://github.com/Skullzo/ARSW-Lab9/blob/main/images/readme/6.4.png)
 
 	![img](https://github.com/Skullzo/ARSW-Lab9/blob/main/images/readme/6.5.png)
 
