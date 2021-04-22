@@ -91,9 +91,11 @@ Por último, seleccionamos la función creada en **Microsoft Azure**, que es **F
 	Es un modelo de ejecución en el que el proveedor en la nube (AWS, Azure o Google Cloud) es responsable de ejecutar un fragmento de código mediante la asignación dinámica de los recursos. Y cobrando solo por la cantidad de recursos utilizados para ejecutar el código. El código, generalmente, se ejecuta dentro de contenedores sin estado que pueden ser activados por una variedad de eventos que incluyen solicitudes HTTP, eventos de base de datos, servicios de colas, alertas de monitoreo, carga de archivos, eventos programados (trabajos cron), etc. 
 	
 * ¿Qué es el runtime y que implica seleccionarlo al momento de crear el Function App?    
+	
 	Un runtime carga todas las aplicaciones de un programa y las ejecuta en una plataforma. Esta plataforma pone a disposición todos los recursos necesarios para ejecutar el programa independientemente del sistema operativo.
 	
 * ¿Por qué es necesario crear un Storage Account de la mano de un Function App?  
+	
 	Es necesario para las operaciones de almacenamiento y administracion que realizan las Function App.
 
 * ¿Cuáles son los tipos de planes para un Function App?, ¿En qué se diferencias?, mencione ventajas y desventajas de cada uno de ellos.  
@@ -123,6 +125,7 @@ Por último, seleccionamos la función creada en **Microsoft Azure**, que es **F
 	
 	
 * ¿Por qué la memoization falla o no funciona de forma correcta?  
+	
 	No funciona de la manera correcta porque los numeros que se generan son muy grandes, esto hace que la memoria se consuma dado esto la memorizacion no funciona.  
 	
 * ¿Cómo funciona el sistema de facturación de las Function App?  
