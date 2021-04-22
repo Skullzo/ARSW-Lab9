@@ -125,3 +125,12 @@ Por último, seleccionamos la función creada en **Microsoft Azure**, que es **F
 
 	Functions se factura según el consumo de recursos observado, medido en gigabytes por segundos (GB-s). El consumo de recursos observado se calcula multiplicando el tamaño medio de memoria en GB por el tiempo en milisegundos que dura la ejecución de la función. La memoria que una función utiliza se mide redondeando al alza a los 128 MB más cercanos hasta un tamaño de memoria máximo de 1.536 MB, y el tiempo de ejecución se redondea al alza a los 1 ms más cercanos. Para la ejecución de una única función, el tiempo de ejecución mínimo es de 100 ms y la memoria mínima es de 128 MB, respectivamente. Los precios de Functions incluyen una concesión gratuita al mes de 400.000 GB-segundos.
 * Informe
+
+## Autores
+[Alejandro Toro Daza](https://github.com/Skullzo)
+
+[David Fernando Rivera Vargas](https://github.com/DavidRiveraRvD)
+## Licencia & Derechos de Autor
+**©** Alejandro Toro Daza, David Fernando Rivera Vargas. Estudiantes de Ingeniería de Sistemas de la [Escuela Colombiana de Ingeniería Julio Garavito](https://www.escuelaing.edu.co/es/).
+
+Licencia bajo la [GNU General Public License](https://github.com/Skullzo/ARSW-Lab9/blob/main/LICENSE).
