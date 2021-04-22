@@ -75,9 +75,37 @@ Por último, seleccionamos la función creada en **Microsoft Azure**, que es **F
 
 ![img](https://github.com/Skullzo/ARSW-Lab9/blob/main/images/readme/FunctionApp8.PNG)
 
+Luego de desplegar la función a Microsoft Azure desde VIsual Studio Code, se observa un consumo de memoria, indicando que la función se desplegó satisfactoriamente utilizando los recursos correspondientes para la operación, como se puede ver a continuación.
+
+![img](https://github.com/Skullzo/ARSW-Lab9/blob/main/images/readme/GraficoMemoria.PNG)
+
 5. Modifique la coleción de POSTMAN con NEWMAN de tal forma que pueda enviar 10 peticiones concurrentes. Verifique los resultados y presente un informe.
 
+![img](https://github.com/Skullzo/ARSW-Lab9/blob/main/images/readme/5.1.PNG)
+
+![img](https://github.com/Skullzo/ARSW-Lab9/blob/main/images/readme/5.2.png)
+
+Como puede ser observado en las imágenes de prueba de lo realizado, todas las peticiones tuvieron un resultado exitoso.
+
 6. Cree una nueva Function que resuleva el problema de Fibonacci pero esta vez utilice un enfoque recursivo con memoization. Pruebe la función varias veces, después no haga nada por al menos 5 minutos. Pruebe la función de nuevo con los valores anteriores. ¿Cuál es el comportamiento?.
+
+Primero, se realizaron dos pruebas, en la primera se calculó el 1000 n-ésimo número y en la segunda el 10000 n-ésimo número.
+
+![img](https://github.com/Skullzo/ARSW-Lab9/blob/main/images/readme/6.1.PNG)
+
+**Primera prueba**
+
+![img](https://github.com/Skullzo/ARSW-Lab9/blob/main/images/readme/6.2.PNG)
+
+![img](https://github.com/Skullzo/ARSW-Lab9/blob/main/images/readme/6.3.png)
+
+**Segunda Prueba**
+
+![img](https://github.com/Skullzo/ARSW-Lab9/blob/main/images/readme/6.4.png)
+
+![img](https://github.com/Skullzo/ARSW-Lab9/blob/main/images/readme/6.5.png)
+
+Como se puede observar en la primera prueba, todas las peticiones fueron exitosas, mientras que en la segunda prueba todas las peticiones fallaron debido a los límites de la recursión. Además, con este nuevo enfoque los tiempos de respuesta se redujeron bastante.
 
 **Preguntas**
 
