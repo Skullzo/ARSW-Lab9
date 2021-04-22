@@ -91,8 +91,6 @@ Como puede ser observado en las imágenes de prueba de lo realizado, todas las p
 
 	Primero, se realizaron dos pruebas, en la primera se calculó el 1000 n-ésimo número y en la segunda el 10000 n-ésimo número.
 
-	![img](https://github.com/Skullzo/ARSW-Lab9/blob/main/images/readme/6.1.PNG)
-
 	**Primera prueba**
 
 	![img](https://github.com/Skullzo/ARSW-Lab9/blob/main/images/readme/6.2.PNG)
