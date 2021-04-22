@@ -51,11 +51,11 @@ Después, en la pestaña **Supervisión**, habilitamos los insights de la aplica
 
 Ahora, en la pestaña **Etiquetas**, la dejamos tal cual y como se encuentra configurada por defecto, quedando de la siguiente forma.
 
-![img](https://github.com/Skullzo/ARSW-Lab9/blob/main/images/readme/FunctionApp4.png)
+![img](https://github.com/Skullzo/ARSW-Lab9/blob/main/images/readme/FunctionApp4.PNG)
 
 Por último, para crear la aplicación de funciones, revisamos que todo haya quedado configurado correctamente en la pestaña **Revisar y crear**, para posteriormente darle clic sobre el botón **Crear** en la parte inferior de la pantalla.
 
-![img](https://github.com/Skullzo/ARSW-Lab9/blob/main/images/readme/FunctionApp5.png)
+![img](https://github.com/Skullzo/ARSW-Lab9/blob/main/images/readme/FunctionApp5.PNG)
 
 Luego de crear la aplicación de funciones, se despliega la siguiente pantalla indicando que se ha completado la implementación de la función correspondiente.
 
@@ -69,7 +69,7 @@ Después de crear satisfactoriamente la aplicación de funciones desde Microsoft
 
 Luego, presionamos clic derecho sobre la función **FunctionProject** para posteriormente realizar clic izquierdo en **Deploy to Function App...**.
 
-![img](https://github.com/Skullzo/ARSW-Lab9/blob/main/images/readme/FunctionApp7.PNG)
+![img](https://github.com/Skullzo/ARSW-Lab9/blob/main/images/readme/FunctionApp7.png)
 
 Por último, seleccionamos la función creada en **Microsoft Azure**, que es **FunctionProjectFibonacciARSW**.
 
