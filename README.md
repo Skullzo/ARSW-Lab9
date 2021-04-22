@@ -54,7 +54,31 @@ Cuando un conjunto de usuarios consulta un enésimo número (superior a 1000000)
 	Un runtime carga todas las aplicaciones de un programa y las ejecuta en una plataforma. Esta plataforma pone a disposición todos los recursos necesarios para ejecutar el programa independientemente del sistema operativo.
 	
 * ¿Por qué es necesario crear un Storage Account de la mano de un Function App?
-* ¿Cuáles son los tipos de planes para un Function App?, ¿En qué se diferencias?, mencione ventajas y desventajas de cada uno de ellos.
+* ¿Cuáles son los tipos de planes para un Function App?, ¿En qué se diferencias?, mencione ventajas y desventajas de cada uno de ellos.  
+	**Plan de consumo** 
+	Escale de forma automática y pague los recursos de proceso solo cuando se ejecuten las funciones.  
+	En el plan de consumo, las instancias del host de Functions se agregan y quitan de forma dinámica según el número de eventos de entrada.  
+	* Plan de hospedaje predeterminado.  
+	* Pague solo cuando se ejecutan las funciones.  
+	* Escala de forma automática, incluso durante períodos de carga elevada. 
+	
+	**Plan Premium**   
+	Escala automáticamente en función de la demanda mediante trabajos preparados previamente que ejecutan aplicaciones sin ningún retraso después de estar inactivas, ejecuta en instancias más eficaces y se conecta a redes virtuales.  
+	Considere la posibilidad de elegir el plan Premium de Azure Functions en las siguientes situaciones:  
+	* La aplicación de funciones se ejecuta de forma continua, o casi continua.  
+	* Tiene un gran número de ejecuciones pequeñas y una factura de ejecución elevada, pero pocos GB por segundo en el plan de consumo.   
+	* Necesita más opciones de CPU o memoria de las que proporciona el plan de consumo.  
+	* Su código debe ejecutarse durante más tiempo del máximo permitido en el plan de consumo.  
+	* Necesita características que no están disponibles en el plan de consumo, como la conectividad con red virtual.
+	
+	**Plan dedicado**  
+	Ejecute las funciones en un plan de App Service a los Precios de App Service normales.
+	Mejor para escenarios de ejecución prolongada en los que no se puede usar Durable Functions. Considere el plan de App Service en las situaciones siguientes:  
+    * Tiene máquinas virtuales infrautilizadas que ya ejecutan otras instancias de App Service.  
+	* Quiere proporcionar una imagen personalizada en la que ejecutar sus funciones.  
+	* Se requieren escalado y costos predictivos.  
+	
+	
 * ¿Por qué la memoization falla o no funciona de forma correcta?
 * ¿Cómo funciona el sistema de facturación de las Function App?  
 
